@@ -191,7 +191,7 @@ public class Lesson10 {
         do {
             System.out.printf("\n Nhập chuỗi %s: ", name);
             str = scanner.nextLine();
-            System.out.printf("%d", str.trim().length());
+            
         }
         while (str.trim().length()==0);
 
