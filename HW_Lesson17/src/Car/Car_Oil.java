@@ -1,6 +1,6 @@
 package Car;
 
-public class Car_Oil extends Cars{
+public class Car_Oil extends Cars implements ICar_Manual{
     String nhienLieu = "Xăng";
     String suDung = "7l/100km";
 
@@ -26,5 +26,25 @@ public class Car_Oil extends Cars{
     public void diChuyen() {
         super.diChuyen();
         System.out.printf("\n Đây là loại xe chạy bằng Xăng nhãn hiệu %s", nhanHieu);
+    }
+
+    @Override
+    public void diChuyenDuongBangPhang() {
+
+    }
+
+    @Override
+    public void diChuyenLeoDoc() {
+
+    }
+
+    @Override
+    public void diChuyenLoiSuoi() {
+
+    }
+
+    @Override
+    public void diChuyenGioCaoDiem() {
+
     }
 }

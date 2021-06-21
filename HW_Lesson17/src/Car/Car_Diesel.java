@@ -1,6 +1,6 @@
 package Car;
 
-public class Car_Diesel extends Cars{
+public class Car_Diesel extends Cars implements ICar_Manual{
     String loaiDiesel;
 
 
@@ -30,5 +30,25 @@ public class Car_Diesel extends Cars{
                 ", phanKhuc='" + phanKhuc + '\'' +
                 ", nhanHieu='" + nhanHieu + '\'' +
                 '}';
+    }
+
+    @Override
+    public void diChuyenDuongBangPhang() {
+
+    }
+
+    @Override
+    public void diChuyenLeoDoc() {
+
+    }
+
+    @Override
+    public void diChuyenLoiSuoi() {
+
+    }
+
+    @Override
+    public void diChuyenGioCaoDiem() {
+
     }
 }
