@@ -1,5 +1,6 @@
 package Task;
 
+import java.util.HashSet;
 import java.util.Set;
 
 /**
@@ -13,15 +14,36 @@ import java.util.Set;
  •Write unit test for the removeAllNumbersGreaterThan10() method
  */
 public class Task5 {
-
+    public static void main(String[] args) {
+        Task5 task5 = new Task5();
+        Set<Integer> setNumber = task5.createSet();
+        System.out.println("Set trước khi remove là: " + setNumber);
+        System.out.println("Số phần tử của Set là: " + setNumber.size());
+        Set<Integer> integerSet = task5.removeAllNumbersGreaterThan10(setNumber);
+        System.out.println("Số phần tử còn lại sau khi đã removed là: " + integerSet);
+    }
     public Set<Integer> createSet() {
         //write your code here
-        return null;
+        Set<Integer> setNumber = new HashSet<>();
+        setNumber.add(4);
+        setNumber.add(7);
+        setNumber.add(11);
+        setNumber.add(50);
+        setNumber.add(499);
+        setNumber.add(222);
+        setNumber.add(443);
+        setNumber.add(777);
+        setNumber.add(0);
+        setNumber.add(10);
+
+        return setNumber;
+
     }
     public Set<Integer> removeAllNumbersGreaterThan10(Set<Integer> set) {
         //write your code here
+        set.removeIf(i -> i > 10);
+        return set;
 
-        return null;
     }
 
 }
